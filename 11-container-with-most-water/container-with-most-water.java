@@ -10,11 +10,11 @@ class Solution {
             if(area>max){
                 max=area;
             }
-            if(height[l]>height[r]){
-                r--;
+            if(height[l]<height[r]){
+                l++;
             }
             else{
-                l++;
+                r--;
             }
         }
         return max;
