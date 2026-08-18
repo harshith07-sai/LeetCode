@@ -4,18 +4,19 @@ class Solution {
         int r=height.length-1;
         int max=0;
         while(l<r){
-            int w=r-l;
+            int width=r-l;
             int h=Math.min(height[l],height[r]);
-            int area=w*h;
+            int area=width*h;
             if(area>max){
                 max=area;
             }
-            if(height[l]<height[r]){
-                l++;
-            }
-            else{
+            if(height[l]>height[r]){
                 r--;
             }
+            else{
+                l++;
+            }
+
         }
         return max;
     }
