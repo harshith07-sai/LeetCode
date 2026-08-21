@@ -10,7 +10,6 @@ class Solution {
             }
             l++;
             r--;
-
         }
         return true;
     }
@@ -25,5 +24,6 @@ class Solution {
             r--;
         }
         return true;
+
     }
 }
