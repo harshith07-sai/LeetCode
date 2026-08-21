@@ -1,11 +1,11 @@
 class Solution {
-    public void duplicateZeros(int[] nums) {
-        for(int i=0;i<nums.length-1;i++){
-            if(nums[i]==0){
-                for(int j=nums.length-1;j>i;j--){
-                    nums[j]=nums[j-1];
+    public void duplicateZeros(int[] arr) {
+        for(int i=0;i<arr.length-1;i++){
+            if(arr[i]==0){
+                for(int j=arr.length-1;j>i;j--){
+                    arr[j]=arr[j-1];
                 }
-                nums[i+1]=0;
+                arr[i+1]=0;
                 i++;
             }
         }
